@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="alert alert-warning">Waring ! this is a Problem</div>
+    <div class="alert alert-danger">Waring ! this is a Problem</div>
+    <div class="alert alert-success">Waring ! this is a Problem</div>
+    <div class="alert alert-info">Waring ! this is a Problem</div>
+    <div class="alert alert-primary">Waring ! this is a Problem</div>
+    <div class="alert alert-secondry">Waring ! this is a Problem</div>
+
+    <div class="alert alert-danger">this is problem</div>
+
+    <div class="alert alert-danger alert-dismissible fade show">
+        <strong>Alert Problem</strong>
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <div
+        class="alert alert-primary alert-dismissible fade show"
+        role="alert"
+    >
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+        ></button>
+        <strong>Alert Heading</strong> Alert Content
+    </div>
+    
+    <script>
+        var alertList = document.querySelectorAll(".alert");
+        alertList.forEach(function (alert) {
+            new bootstrap.Alert(alert);
+        });
+    </script>
+    
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
